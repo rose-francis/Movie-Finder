@@ -5,7 +5,7 @@ const resultsContainer=document.querySelector('#results');
 searchButton.addEventListener("click",()=>{
     const searchItem=searchInput.value.trim();
         if(searchItem){
-            searchMovies(searchTerm);
+            searchMovies(searchItem);
         }  
     });
 
