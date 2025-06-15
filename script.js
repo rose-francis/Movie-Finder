@@ -3,13 +3,13 @@ const searchButton=document.querySelector('#searchButton');
 const resultsContainer=document.querySelector('#results');
 
 searchButton.addEventListener("click",()=>{
-    const searchItem=searchInput.ariaValueMax.trim();
+    const searchItem=searchInput.value.trim();
         if(searchItem){
             searchMovies(searchTerm);
         }  
     });
 
- const apiKey=" ad23bdce";
+ const apiKey="ad23bdce";
  function searchMovies(query){
     const url=`https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(query)}`;
     
